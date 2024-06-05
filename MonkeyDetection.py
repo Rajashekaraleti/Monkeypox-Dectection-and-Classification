@@ -278,7 +278,7 @@ def predict():
 
 font = ('times', 16, 'bold')
 title = Label(main, text='Monkeypox Detection using Modified VGG16 & Custom CNN Model')
-title.config(bg='firebrick4', fg='dodger blue')  
+title.config(bg='#000097', fg='White')  
 title.config(font=font)           
 title.config(height=3, width=120)       
 title.place(x=0,y=5)
@@ -292,29 +292,29 @@ text.config(font=font1)
 
 
 font1 = ('times', 13, 'bold')
-uploadButton = Button(main, text="Upload Monkeypox Dataset", command=uploadDataset, bg='#ffb3fe')
+uploadButton = Button(main, text="Upload Monkeypox Dataset", command=uploadDataset, bg='#ffffff')
 uploadButton.place(x=50,y=550)
 uploadButton.config(font=font1)  
 
-processButton = Button(main, text="Preprocess Dataset", command=preprocess, bg='#ffb3fe')
+processButton = Button(main, text="Preprocess Dataset", command=preprocess, bg='#ffffff')
 processButton.place(x=340,y=550)
 processButton.config(font=font1) 
 
-vggButton1 = Button(main, text="Run VGG16 Algorithm", command=runVGG, bg='#ffb3fe')
+vggButton1 = Button(main, text="Run VGG16 Algorithm", command=runVGG, bg='#ffffff')
 vggButton1.place(x=570,y=550)
 vggButton1.config(font=font1) 
 
-cnnButton = Button(main, text="Run Custom CNN Algorithm", command=runCNN, bg='#ffb3fe')
+cnnButton = Button(main, text="Run Custom CNN Algorithm", command=runCNN, bg='#ffffff')
 cnnButton.place(x=50,y=600)
 cnnButton.config(font=font1) 
 
-graphButton = Button(main, text="Comparison Graph", command=graph, bg='#ffb3fe')
+graphButton = Button(main, text="Comparison Graph", command=graph, bg='#ffffff')
 graphButton.place(x=340,y=600)
 graphButton.config(font=font1) 
 
-predictButton = Button(main, text="Predict Disease from Test Image", command=predict, bg='#ffb3fe')
+predictButton = Button(main, text="Predict Disease from Test Image", command=predict, bg='#ffffff')
 predictButton.place(x=570,y=600)
 predictButton.config(font=font1) 
 
-main.config(bg='LightSalmon3')
+main.config(bg='#0080ff')
 main.mainloop()
